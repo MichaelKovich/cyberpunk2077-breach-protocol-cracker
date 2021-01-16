@@ -1,0 +1,51 @@
+{
+  "extends": ["airbnb", "prettier", "plugin:cypress/recommended"],
+  "parser": "babel-eslint",
+  "globals": {
+    "localStorage": true,
+    "document": true,
+    "window": true
+  },
+  "rules": {
+    "func-names": ["error", "never"],
+    "no-underscore-dangle": "off",
+    "linebreak-style": "off",
+    "object-curly-spacing": 2,
+    "curly": ["error", "multi-line"],
+    "comma-dangle": ["error", "always-multiline"],
+    "no-ternary": "error",
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "*", "next": "return"  }
+    ],
+    "react/prop-types": 0,
+    "react/button-has-type": 0,
+    "react/no-access-state-in-setstate": 0,
+    "react/no-unescaped-entities": 0,
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "import/no-named-as-default": 0,
+    "import/prefer-default-export": 0,
+    "import/extensions": 0,
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/href-no-hash": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/label-has-associated-control": 0,
+    "jsx-a11y/label-has-for": 0,
+    "jsx-a11y/no-noninteractive-element-interactions": 0
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "plugins": ["cypress"]
+}
